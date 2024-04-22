@@ -1,0 +1,22 @@
+git config --global user.name GalloJunior
+git config --global user.email gallojunior@gmail.com
+
+dotnet new mvc -o GalloFlix
+
+dotnet new sln --name GalloFlix
+
+dotnet sln add GalloFlix\GalloFlix.csproj
+
+
+Instalar pacotes no projeto:
+    1 - Usar o site nuget.org e o dotnet CLI
+        dotnet add package Microsoft.EntityFrameworkCore --version 8.0.4
+        dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.4
+        dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.4
+        dotnet add package Pomelo.EntityFrameworkCore.MySql --version 8.0.2
+    
+    2 - Usar extensões do CODE como Nuget Gallery
+        Shift + Ctrl + P
+        Digitar Nuget
+
+
