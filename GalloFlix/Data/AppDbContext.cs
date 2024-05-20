@@ -17,6 +17,7 @@ public class AppDbContext : DbContext
     {
         base.OnModelCreating(builder);
 
+        #region Configuração do Muitos para Muitos do MovieGenre
         builder.Entity<MovieGenre>()
             .HasKey(mg => new { mg.MovieId, mg.GenreId});
         
@@ -29,5 +30,6 @@ public class AppDbContext : DbContext
             .HasOne(mg => mg.Genre)
             .WithMany(g => g.Movies)
             .HasForeignKey(mg => mg.GenreId);
+        #endregion
     }
 }
