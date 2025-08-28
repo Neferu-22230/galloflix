@@ -1,5 +1,5 @@
-git config --global user.name GalloJunior
-git config --global user.email gallojunior@gmail.com
+git config --global user.name Neferu-22230
+git config --global user.email luizotavios309@gmail.c'om
 
 dotnet new mvc -o GalloFlix
 
